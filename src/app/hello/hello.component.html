@@ -1,0 +1,11 @@
+<div class="divwithborder">
+
+<form #form="ngForm" (ngSubmit)="alertName(form)">
+<fieldset><legend>Add User</legend>
+<input name="empid" type="Text" placeholder="empid:number" [(ngModel)]="empid"/><br/>
+<input name="fname" type="Text" placeholder="first name" [(ngModel)]="fname"/><br/>
+<input name="lname" type="Text" placeholder="last name" [(ngModel)]="lname"/><br/>
+<input name="submit" value="Create" type="submit"/>
+</fieldset>
+</form>
+</div>
